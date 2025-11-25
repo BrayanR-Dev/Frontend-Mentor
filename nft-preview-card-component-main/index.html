@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  
+</head>
+
+<body class="font-Outfit">
+  <main class="h-screen w-full bg-Blue-950-mainBG flex justify-center items-center">
+    <section class="bg-Blue-900-cardBG p-5 rounded-xl shadow-2xl shadow-black/50 group">
+      <div class="size-75 mb-4 relative group">
+        <div class="bg-Cyan-400/50 absolute rounded-lg w-full h-full flex justify-center items-center scale-0 group-hover:scale-100 transition-transform duration-300 cursor-pointer">
+          <img src="./images/icon-view.svg" alt="">
+        </div>
+        <img class="rounded-lg" src="./images/image-equilibrium.jpg" alt="">
+      </div>
+      <div class="space-y-3 mb-4">
+        <h1 class="text-White group-hover:text-Cyan-400 transition-colors duration-300 cursor-pointer font-semibold text-[22px]">Equilibrium #3429</h1>
+        <p class="max-w-[300px] text-Blue-500/85 font-light text-[18px]">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+      <div class="flex justify-between max-w-[300px] border-b border-Blue-800-line pb-3 mb-3">
+        <div class="flex items-center gap-2">
+          <img src="./images/icon-ethereum.svg" alt="">
+          <span class="text-Cyan-400 font-medium">0.041 ETH</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="./images/icon-clock.svg" alt="">
+            <span class="text-Blue-500/85">3 days left</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <img class="size-8 border rounded-full border-White" src="./images/image-avatar.png" alt="">
+        <p class="text-Blue-500/85">Creation of <span class="text-White hover:text-Cyan-400 transition-colors duration-300 cursor-pointer">Jules Wyvern</span></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
