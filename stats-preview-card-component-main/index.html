@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+
+<body class="bg-navy-950main-background">
+  <main class="w-full md:h-screen flex justify-center items-center px-4 md:px-0 py-6">
+    <section class="flex flex-col-reverse md:flex-row bg-blue-950card-background rounded-lg">
+      <div class="py-6 md:py-0 flex flex-col justify-center md:pl-14 md:pr-28">
+        <h1 class="text-center md:text-start text-white font-inter font-bold text-3xl md:text-4xl max-w-70 mx-auto md:mx-0 md:max-w-92 md:leading-10 mb-2 md:mb-6">
+          Get <span class="text-Purple-500accent">insights</span> that help your business grow.
+        </h1>
+        <p class="text-center md:text-start text-white-mainparagraph text-[15px] font-inter max-w-66 mx-auto md:mx-0 md:max-w-92 mb-5 md:mb-10 md:leading-7">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <div class="max-w-60 md:max-w-auto mx-auto md:mx-0 text-center md:text-start flex flex-col items-center md:flex-row gap-5 md:gap-15 font-lexend">
+          <div>
+            <p class="text-white text-2xl font-semibold">10k+</p>
+            <p class="text-white-statheadings font-light uppercase text-[13px]">companies</p>
+          </div>
+          <div>
+            <p class="text-white text-2xl font-semibold">314</p>
+            <p class="text-white-statheadings font-light uppercase text-[13px]">templates</p>
+          </div>
+          <div>
+            <p class="text-white text-2xl font-semibold">12m+</p>
+            <p class="text-white-statheadings font-light uppercase text-[13px]">queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute w-full h-full bg-Purple-500accent/40 rounded-t-lg md:rounded-t-0 rounded-r-0 md:rounded-r-lg z-10"></div>
+        <img class="rounded-r-lg brightness-50 hidden md:block" src="./images/image-header-desktop.jpg" alt="">
+        <img class="rounded-t-lg brightness-50 block md:hidden" src="./images/image-header-mobile.jpg" alt="">
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
