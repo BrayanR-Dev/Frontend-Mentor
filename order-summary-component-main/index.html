@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+
+<body class="font-redHat bg-Blue-100">
+  <main
+    class="h-screen w-full md:bg-[url(/images/pattern-background-desktop.svg)] bg-no-repeat bg-contain flex justify-center items-center">
+    <section class="bg-Blue-50 rounded-2xl shadow-xl">
+      <div class="max-w-90">
+        <img class="w-full rounded-t-2xl" src="./images/illustration-hero.svg" alt="">
+      </div>
+      <div class="py-6 px-4">
+        <h1 class="text-Blue-950 font-extrabold text-2xl text-center mb-3">
+          Order Summary
+        </h1>
+        <p class="text-Gray-600 text-center max-w-80 mx-auto mb-4">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+        <div class="bg-Blue-100/60 rounded-xl px-5 py-3 flex justify-between items-center max-w-85 mx-auto mb-6">
+          <div class="flex items-center gap-4">
+            <div>
+              <img src="./images/icon-music.svg" alt="">
+            </div>
+            <div class="text-Blue-950">
+              <p class="font-extrabold">Annual Plan</p>
+              <p class="text-Gray-600">$59.99/year</p>
+            </div>
+          </div>
+          <a href="#"
+            class="text-Blue-700 hover:text-Blue-700/60 transition-colors duration-400 font-bold underline hover:no-underline">Change</a>
+        </div>
+        <div
+          class="max-w-85 mx-auto bg-Blue-700 hover:bg-Blue-700/60 transition-colors duration-400 text-Blue-50 flex justify-center items-center font-bold rounded-xl shadow-xl mt-4 mb-5">
+          <a href="#" class="w-full h-full py-2 text-center">Proceed to Payment</a>
+        </div>
+        <div
+          class="max-w-85 mx-auto text-center text-Gray-600 hover:text-Blue-950 transition-colors duration-400 font-bold">
+          <a href="#">Cancel Order</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
