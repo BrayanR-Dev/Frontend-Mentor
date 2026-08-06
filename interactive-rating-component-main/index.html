@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="./src/script.js" defer></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body class="font-overpass">
+  <main class="bg-gray-dark min-h-screen flex justify-center items-center">
+    <section id="rating-state"
+      class="bg-radial-[at_50%_-10%] from-medium-gray to-medium-gray/45 p-6 rounded-3xl flex flex-col items-start">
+      <div class="bg-light-gray/10 p-3 rounded-full mb-7">
+        <img src="./images/icon-star.svg" alt="star icon">
+      </div>
+      <div class="max-w-[350px] mb-7 space-y-3">
+        <h1 class="text-3xl text-white font-bold">How did we do?</h1>
+        <p class="text-light-gray leading-7">Please let us know how we did with your support request. All feedback is
+          appreciated
+          to help us improve our offering!</p>
+      </div>
+      <div>
+        <div class="flex min-w-[360px] justify-between mb-7">
+          <button type="button"
+            class="rating-btn text-light-gray bg-light-gray/15 p-3 font-medium w-12 aspect-square flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-orange hover:text-gray-dark focus:outline-none"
+            aria-pressed="false">1</button>
+          <button type="button"
+            class="rating-btn text-light-gray bg-light-gray/15 p-3 font-medium w-12 aspect-square flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-orange hover:text-gray-dark focus:outline-none"
+            aria-pressed="false">2</button>
+          <button type="button"
+            class="rating-btn text-light-gray bg-light-gray/15 p-3 font-medium w-12 aspect-square flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-orange hover:text-gray-dark focus:outline-none"
+            aria-pressed="false">3</button>
+          <button type="button"
+            class="rating-btn text-light-gray bg-light-gray/15 p-3 font-medium w-12 aspect-square flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-orange hover:text-gray-dark focus:outline-none"
+            aria-pressed="false">4</button>
+          <button type="button"
+            class="rating-btn text-light-gray bg-light-gray/15 p-3 font-medium w-12 aspect-square flex items-center justify-center rounded-full transition-colors duration-300 hover:bg-orange hover:text-gray-dark focus:outline-none"
+            aria-pressed="false">5</button>
+        </div>
+        <button id="submit-rating"
+          class="submit-btn bg-orange font-semibold uppercase rounded-full min-w-[360px] py-2 transition-colors duration-300 hover:bg-white cursor-pointer">Submit</button>
+      </div>
+    </section>
+    <section id="thank-you-state" class="hidden bg-radial-[at_50%_-10%] from-medium-gray to-medium-gray/45 p-6 rounded-3xl flex flex-col items-center">
+      <div class="mb-7">
+        <img src="./images/illustration-thank-you.svg" alt="thank you illustration">
+      </div>
+      <div class="text-orange bg-light-gray/10 rounded-full px-3 py-1.5 font-light mb-5">
+        You selected <span id="selected-rating" class="text-orange">0</span> out of 5
+      </div>
+      <div class="text-center">
+        <h1 class="text-2xl text-white font-bold my-5">
+          Thank you!
+        </h1>
+        <p class="text-light-gray leading-7 max-w-[360px]">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rating state start -->
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+
+  <!-- Thank you state end -->
+</body>
+
+</html>
