@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+    --color-Softorange: hsl(35, 77%, 62%);
+    --color-Softred: hsl(5, 85%, 63%);
+    --color-Offwhite: hsl(36, 100%, 99%);
+    --color-Grayishblue: hsl(233, 8%, 79%);
+    --color-Dark-grayishblue: hsl(236, 13%, 42%);
+    --color-Very-darkblue: hsl(240, 100%, 5%);
+    --font-Inter: "Inter", sans-serif;
+    --text-15: 15px;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+.drawer-panel {
+    transition: transform 460ms cubic-bezier(.16, 1, .3, 1);
+}
+
+.drawer-backdrop {
+    transition: background-color 460ms cubic-bezier(.16, 1, .3, 1);
+}
+
+.page-shift {
+    transition: transform 460ms cubic-bezier(.16, 1, .3, 1);
+}
+
+[data-drawer-panel] {
+    transform: translateX(100%);
+}
+
+.drawer-open [data-drawer-panel] {
+    transform: translateX(0);
+}
+
+.drawer-open .page-shift {
+    transform: translateX(-136px);
+}
+
+.drawer-root {
+    pointer-events: none;
+    z-index: 50;
+}
+
+.drawer-open {
+    pointer-events: auto;
+}
+
+[data-drawer-backdrop] {
+    z-index: 0;
+}
+
+[data-drawer-panel] {
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1.5px;
+    background: #181A2E;
+    transition: width 280ms ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
