@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+</head>
+
+<body>
+  <header class="fixed z-10 container left-1/2 -translate-x-1/2 backdrop-blur-md">
+    <div class="w-full flex justify-between items-center px-8 py-8">
+      <div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <nav class="space-x-10 text-White font-barlow">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#"
+          class="text-Grey950 font-fraunces uppercase bg-White px-11 py-4 rounded-full font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class=" relative container mx-auto">
+      <div class="absolute top-60 w-full flex flex-col items-center justify-center gap-20">
+        <h1 class="font-fraunces uppercase font-bold text-White text-6xl tracking-[12px]">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="">
+      </div>
+      <div>
+        <img src="./images/desktop/image-header.jpg" alt="">
+      </div>
+    </section>
+    <section class="container mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="flex justify-center items-center">
+          <div class="space-y-6">
+            <h2 class="text-4xl font-bold font-fraunces">
+              Transform your <br> brand
+            </h2>
+            <p class="font-barlow text-Grey600 font-medium">
+              We are a full-service creative agency specializing in <br> helping brands grow fast.
+              Engage your clients through <br> compelling visuals that do most of the marketing for you.
+            </p>
+            <button
+              class="font-fraunces w-26 font-semibold relative after:absolute after:bottom-0.5 after:left-0 after:h-1.5 after:w-full after:bg-Yellow500/40 after:rounded-full after:-z-10">
+              <p class="z-10">Learn more</p>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img class="w-full" src="./images/desktop/image-transform.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div>
+          <img class="w-full" src="./images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="space-y-6">
+            <h2 class="text-4xl font-bold font-fraunces">Stand out to the right <br> audience</h2>
+            <p class="font-barlow text-Grey600 font-medium">Using a collaborative formula of designers, researchers,
+              <br> photographers, videographers, and copywriters,
+              we’ll <br>
+              build and extend your brand in digital places.
+            </p>
+            <button
+              class="font-fraunces w-26 font-semibold relative after:absolute after:bottom-0.5 after:left-0 after:h-1.5 after:w-full after:bg-Red400/40 after:rounded-full after:-z-10">
+              <p class="z-10">Learn more</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div class="relative">
+          <div>
+            <img class="w-full" src="./images/desktop/image-graphic-design.jpg" alt="">
+          </div>
+          <div class="absolute bottom-20 left-1/2 -translate-x-1/2 text-center space-y-5">
+            <h2 class="text-Green800 font-bold font-fraunces text-3xl">Graphic design</h2>
+            <p class="font-barlow font-medium text-Green800/75">Great design makes you memorable. We deliver artwork
+              that underscores your brand message and captures
+              potential clients’ attention.</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div>
+            <img class="w-full" src="./images/desktop/image-photography.jpg" alt="">
+          </div>
+          <div class="absolute bottom-20 left-1/2 -translate-x-1/2 text-center space-y-5">
+            <h2 class="text-Blue800 font-bold font-fraunces text-3xl">Photography</h2>
+            <p class="font-barlow font-medium text-Blue800/75">Increase your credibility by getting the most <br>
+              stunning, high-quality photos that improve your business
+              image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto pt-20">
+      <h2 class="text-center font-semibold font-fraunces uppercase text-Grey400 text-2xl tracking-[4px]">Client
+        testimonials</h2>
+
+      <div class="flex justify-center max-w-6xl mx-auto gap-20 py-32">
+        <div class="text-center flex flex-col items-center gap-7">
+          <div>
+            <img class="rounded-full size-14" src="./images/image-emily.jpg" alt="">
+          </div>
+          <p class="font-barlow font-medium text-Grey600 leading-7">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </p>
+          <div>
+            <p class="font-fraunces font-bold text-xl">Emily R.</p>
+            <p class="font-barlow text-Grey550">Marketing Director</p>
+          </div>
+        </div>
+
+        <div class="text-center flex flex-col items-center gap-7">
+          <div>
+            <img class="rounded-full size-14" src="./images/image-thomas.jpg" alt="">
+          </div>
+          <p class="font-barlow font-medium text-Grey600 leading-7">Sunnyside’s enthusiasm coupled with their keen
+            interest in our brand’s success made it a satisfying and
+            enjoyable experience.</p>
+          <div>
+            <p class="font-fraunces font-bold text-xl">Thomas S.</p>
+            <p class="font-barlow text-Grey550">Chief Operating Officer</p>
+          </div>
+        </div>
+
+        <div class="text-center flex flex-col items-center gap-7">
+          <div>
+            <img class="rounded-full size-14" src="./images/image-jennie.jpg" alt="">
+          </div>
+          <p class="font-barlow font-medium text-Grey600 leading-7">Incredible end result! Our sales increased over
+            400% when we worked with Sunnyside. Highly
+            recommended!</p>
+          <div>
+            <p class="font-fraunces font-bold text-xl">Jennie F.</p>
+            <p class="font-barlow text-Grey550">Business Owner</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-4">
+        <div>
+          <img class="w-full" src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+        </div>
+        <div>
+          <img class="w-full" src="./images/desktop/image-gallery-orange.jpg" alt="">
+        </div>
+        <div>
+          <img class="w-full" src="./images/desktop/image-gallery-cone.jpg" alt="">
+        </div>
+        <div>
+          <img class="w-full" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container bg-Green500/55 flex flex-col gap-14 items-center justify-center py-20">
+    <div>
+      <img class="opacity-80" src="./images/logog.svg" alt="">
+    </div>
+    <div class="flex gap-10">
+      <a href="#" class="text-Green500">About</a>
+      <a href="#" class="text-Green500">Services</a>
+      <a href="#" class="text-Green500">Projects</a>
+    </div>
+    <div class="flex gap-6">
+      <a href=""><img src="./images/icon-facebook.svg" alt=""></a>
+      <a href=""><img src="./images/icon-instagram.svg" alt=""></a>
+      <a href=""><img src="./images/icon-twitter.svg" alt=""></a>
+      <a href=""><img src="./images/icon-pinterest.svg" alt=""></a>
+    </div>
+  </footer>
+</body>
+
+</html>
